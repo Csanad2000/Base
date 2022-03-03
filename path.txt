@@ -1,1 +1,2 @@
 /d/Projectek/GitRepository
+/mnt/d/Projectek/GitRepository
