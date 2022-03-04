@@ -1,2 +1,3 @@
 /d/Projectek/GitRepository
 /mnt/d/Projectek/GitRepository
+/home/csanad/work/GitRepository
