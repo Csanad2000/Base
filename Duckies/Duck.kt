@@ -1,15 +1,15 @@
-public abstract class Duck{
-    var flyBehavior:FlyBehavior
-    var quackBehavior:QuackBehavior
+abstract class Duck{
+    abstract var flyBehavior:FlyBehavior
+    abstract var quackBehavior:QuackBehavior
 
-    public abstract fun display()
-    public fun performFly(){
+    abstract fun display()
+    fun performFly(){
         flyBehavior.fly()
     }
-    public fun performQuack(){
+    fun performQuack(){
         quackBehavior.quack()
     }
-    public fun swim(){
+    fun swim(){
         println("All ducks float, even decoys!")
     }
 }

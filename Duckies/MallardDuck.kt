@@ -1,10 +1,12 @@
-public class MallardDuck:Duck{
-    public fun MallardDuck(){
-        quackBehavior=Quack()
-        flyBehavior=FlyWithWings()
-    }
+class MallardDuck(
+    override var quackBehavior: QuackBehavior = Quack(),
+    override var flyBehavior: FlyBehavior = FlyWithWings()
+) : Duck() {
 
-    override public fun display(){
+    //override var quackBehavior: QuackBehavior = Quack()
+    //override var flyBehavior: FlyBehavior = FlyWithWings()
+
+    override fun display() {
         println("I'm a Mallard duck")
     }
 }

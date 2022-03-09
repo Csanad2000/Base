@@ -1,5 +1,5 @@
 public class FlyNoWay:FlyBehavior{
-    public fun fly(){
+    public override fun fly(){
         println("I can't fly")
     }
 }
