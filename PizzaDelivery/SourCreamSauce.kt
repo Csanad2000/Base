@@ -1,0 +1,2 @@
+class SourCreamSauce:Sauce {
+}
