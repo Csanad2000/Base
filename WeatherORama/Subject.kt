@@ -1,6 +1,6 @@
 interface Subject {
-    fun registerListener(l:Listener)
-    fun removeListener(l:Listener)
+    fun registerListener(listener: Listener)
+    fun removeListener(listener: Listener)
     fun notifyListeners()
     fun setChanged()
 }
