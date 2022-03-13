@@ -1,7 +1,6 @@
-class Soy(var beverage: Beverage):CondimentDecorator() {
-
+class Soy(var beverage: Beverage) : CondimentDecorator() {
     init {
-        description=beverage.description+", Soy"
+        description = beverage.description + ", Soy"
     }
 
     override fun cost(): Double {

@@ -1,4 +1,4 @@
-class StereoOnCommand(var stereo:Stereo):Command {
+class StereoOnCommand(var stereo: Stereo) : Command {
     override fun execute() {
         stereo.on()
         stereo.setCd()

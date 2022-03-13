@@ -1,2 +1,1 @@
-object Singleton {
-}
+object Singleton {}

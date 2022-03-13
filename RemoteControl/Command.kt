@@ -1,4 +1,4 @@
 interface Command {
-    fun  execute()
+    fun execute()
     fun undo()
 }

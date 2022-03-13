@@ -1,7 +1,6 @@
-class Mocha(var beverage: Beverage):CondimentDecorator() {
-
+class Mocha(var beverage: Beverage) : CondimentDecorator() {
     init {
-        description=beverage.description+", Mocha"
+        description = beverage.description + ", Mocha"
     }
 
     override fun cost(): Double {

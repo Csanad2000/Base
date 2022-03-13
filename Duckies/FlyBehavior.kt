@@ -1,3 +1,3 @@
-public interface FlyBehavior{
+public interface FlyBehavior {
     public fun fly()
 }

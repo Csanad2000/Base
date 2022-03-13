@@ -1,2 +1,1 @@
-class TomatoSauce:Sauce {
-}
+class TomatoSauce : Sauce {}

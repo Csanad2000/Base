@@ -1,3 +1,3 @@
-class LettuceVegetable:Vegetable {
-    override var name: String="Lettuce"
+class LettuceVegetable : Vegetable {
+    override var name: String = "Lettuce"
 }

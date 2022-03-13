@@ -1,4 +1,4 @@
-class StereoOffCommand(var stereo:Stereo):Command {
+class StereoOffCommand(var stereo: Stereo) : Command {
     override fun execute() {
         stereo.off()
     }

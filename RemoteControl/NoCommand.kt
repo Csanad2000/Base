@@ -1,7 +1,5 @@
-class NoCommand:Command {
-    override fun execute() {
-    }
+class NoCommand : Command {
+    override fun execute() {}
 
-    override fun undo() {
-    }
+    override fun undo() {}
 }

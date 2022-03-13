@@ -1,7 +1,6 @@
-class Whip(var beverage: Beverage):CondimentDecorator() {
-
+class Whip(var beverage: Beverage) : CondimentDecorator() {
     init {
-        description=beverage.description+", Whip"
+        description = beverage.description + ", Whip"
     }
 
     override fun cost(): Double {

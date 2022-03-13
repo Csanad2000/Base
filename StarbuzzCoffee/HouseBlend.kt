@@ -1,6 +1,6 @@
-class HouseBlend:Beverage() {
+class HouseBlend : Beverage() {
     init {
-        description="House Blend Coffee"
+        description = "House Blend Coffee"
     }
 
     override fun cost(): Double {

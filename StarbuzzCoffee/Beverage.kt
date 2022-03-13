@@ -1,5 +1,5 @@
 abstract class Beverage {
-    var description:String="Unknown Beverage"
+    var description: String = "Unknown Beverage"
 
-    abstract fun cost():Double
+    abstract fun cost(): Double
 }

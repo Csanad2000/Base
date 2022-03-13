@@ -1,2 +1,1 @@
-abstract class CondimentDecorator:Beverage() {
-}
+abstract class CondimentDecorator : Beverage() {}

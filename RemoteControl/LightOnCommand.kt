@@ -1,4 +1,4 @@
-class LightOnCommand(var light:Light):Command {
+class LightOnCommand(var light: Light) : Command {
     override fun execute() {
         light.on()
     }

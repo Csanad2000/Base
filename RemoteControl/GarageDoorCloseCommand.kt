@@ -1,4 +1,4 @@
-class GarageDoorCloseCommand(var garageDoor: GarageDoor):Command {
+class GarageDoorCloseCommand(var garageDoor: GarageDoor) : Command {
     override fun execute() {
         garageDoor.down()
     }

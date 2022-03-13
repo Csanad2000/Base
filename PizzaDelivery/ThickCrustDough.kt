@@ -1,2 +1,1 @@
-class ThickCrustDough:Dough {
-}
+class ThickCrustDough : Dough {}

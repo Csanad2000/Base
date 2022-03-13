@@ -1,2 +1,1 @@
-interface Sauce {
-}
+interface Sauce {}

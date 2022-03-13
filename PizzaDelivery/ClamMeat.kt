@@ -1,3 +1,3 @@
-class ClamMeat:Meat {
-    override var name: String="Clam"
+class ClamMeat : Meat {
+    override var name: String = "Clam"
 }

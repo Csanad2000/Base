@@ -1,2 +1,1 @@
-interface Dough {
-}
+interface Dough {}

@@ -1,2 +1,1 @@
-class SourCreamSauce:Sauce {
-}
+class SourCreamSauce : Sauce {}

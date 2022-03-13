@@ -1,6 +1,6 @@
-class Espresso:Beverage() {
+class Espresso : Beverage() {
     init {
-        description="Espresso"
+        description = "Espresso"
     }
 
     override fun cost(): Double {

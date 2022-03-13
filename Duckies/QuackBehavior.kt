@@ -1,3 +1,3 @@
-public interface QuackBehavior{
+public interface QuackBehavior {
     public fun quack()
 }

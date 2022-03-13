@@ -1,2 +1,1 @@
-interface Cheese:Topping {
-}
+interface Cheese : Topping {}

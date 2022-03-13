@@ -1,3 +1,1 @@
-interface Vegetable:Topping {
-
-}
+interface Vegetable : Topping {}
