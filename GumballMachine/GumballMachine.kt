@@ -1,43 +1,45 @@
-class GumballMachine(var count:Int=0){
-    val soldOutState:State=SoldOutState(this)
-    val noQuarterState:State=NoQuarterState(this)
-    val hasQuarterState:State=HasQuarterState(this)
-    val soldState:State=SoldState(this)
-    val winnerState:State=WinnerState(this)
+package gumballmachine
 
-    var state:State=soldOutState
+class GumballMachine(var count: Int = 0) {
+    val soldOutState: State = SoldOutState(this)
+    val noQuarterState: State = NoQuarterState(this)
+    val hasQuarterState: State = HasQuarterState(this)
+    val soldState: State = SoldState(this)
+    val winnerState: State = WinnerState(this)
 
-    init{
-        if(count>0){
-            state=noQuarterState
+    var state: State = soldOutState
+
+    init {
+        if (count > 0) {
+            state = noQuarterState
         }
     }
 
-    fun insertQuarter(){
+    fun insertQuarter() {
         state.insertQuarter()
     }
 
-    fun ejectQuarter(){
+    fun ejectQuarter() {
         state.ejectQuarter()
     }
 
-    fun turnCrank(){
+    fun turnCrank() {
         state.turnCrank()
         state.dispense()
     }
 
-    fun releaseBall(){
+    fun releaseBall() {
         println("Don't drop the ball!")
-        if(count!=0){
+        if (count != 0) {
             count--
         }
     }
 
-    fun refill(count:Int){
-        if(count>0){
-            this.count+=count
-            if(state==soldOutState){
-                state=noQuarterState
+    fun refill(count: Int) {
+        if (count > 0) {
+            this.count += count
+            if (state == soldOutState) {
+                state = noQuarterState
             }
         }
     }

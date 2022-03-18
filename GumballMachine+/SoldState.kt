@@ -1,4 +1,4 @@
-package gumballmachine
+package gumballmachine2
 
 class SoldState(val gumballMachine:GumballMachine):State{
     override fun insertQuarter(){
@@ -21,5 +21,9 @@ class SoldState(val gumballMachine:GumballMachine):State{
             println("Lucky you! Just ran out of gumballs")
             gumballMachine.state=gumballMachine.soldOutState
         }
+    }
+
+    override fun getState():String{
+        return "Sold gumball"
     }
 }

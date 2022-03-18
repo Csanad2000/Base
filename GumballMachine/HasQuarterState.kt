@@ -1,23 +1,25 @@
-class HasQuarterState(val gumballMachine:GumballMachine):State{
-    override fun insertQuarter(){
+package gumballmachine
+
+class HasQuarterState(val gumballMachine: GumballMachine) : State {
+    override fun insertQuarter() {
         println("You can't insert another quarter")
     }
 
-    override fun ejectQuarter(){
+    override fun ejectQuarter() {
         println("Quarter returned")
-        gumballMachine.state=gumballMachine.noQuarterState
+        gumballMachine.state = gumballMachine.noQuarterState
     }
 
-    override fun turnCrank(){
+    override fun turnCrank() {
         println("You turned the crank")
-        if((0..10).random()==1 && gumballMachine.count>1){
-            gumballMachine.state=gumballMachine.winnerState
-        }else{
-            gumballMachine.state=gumballMachine.soldState
+        if ((0..10).random() == 1 && gumballMachine.count > 1) {
+            gumballMachine.state = gumballMachine.winnerState
+        } else {
+            gumballMachine.state = gumballMachine.soldState
         }
     }
 
-    override fun dispense(){
+    override fun dispense() {
         println("No gumball dispensed")
     }
 }

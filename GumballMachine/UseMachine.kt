@@ -1,5 +1,7 @@
-fun main(){
-    val machine=GumballMachine(1)
+package gumballmachine
+
+fun main() {
+    val machine = GumballMachine(1)
     machine.insertQuarter()
     machine.ejectQuarter()
     machine.insertQuarter()
