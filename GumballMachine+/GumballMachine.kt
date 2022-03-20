@@ -1,9 +1,10 @@
 package gumballmachine2
 
+import kotlin.jvm.Throws
 import java.rmi.*
 import java.rmi.server.*
 
-class GumballMachine(var location:String var count:Int=0):UnicastRemoteObject(),GumballMachineRemote{
+class GumballMachine @Throws(RemoteException::class) constructor(var location:String var count:Int=0):UnicastRemoteObject(),GumballMachineRemote{
     val soldOutState:State=SoldOutState(this)
     val noQuarterState:State=NoQuarterState(this)
     val hasQuarterState:State=HasQuarterState(this)
@@ -58,4 +59,4 @@ class GumballMachine(var location:String var count:Int=0):UnicastRemoteObject(),
     override fun readState():String{
         return state.getState()
     }
-} throws RemoteException
+}

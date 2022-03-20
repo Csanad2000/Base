@@ -29,6 +29,15 @@ open class MenuItem(
         println(readDescription())
     }
 
+    override fun printVegetarian(){
+        if (readVegetarian()) {
+            print(" " + readName())
+            print("(v)")
+            println(", " + readPrice())
+            println(readDescription())
+        }
+    }
+
     override fun createIterator(): Iterator {
         return NullIterator()
     }

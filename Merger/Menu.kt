@@ -32,6 +32,13 @@ open class Menu(var name: String, var description: String) : MenuComponent() {
         }
     }
 
+    override fun printVegetarian(){
+        val iterator = menuComponents.iterator()
+        while (iterator.hasNext()) {
+            iterator.next().printVegetarian()
+        }
+    }
+
     override fun createIterator(): Iterator {
         if (iterator == null) {
             iterator = CompositeIterator(MenuComponentIterator(menuComponents))

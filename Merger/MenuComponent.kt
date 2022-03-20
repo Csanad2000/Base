@@ -31,5 +31,9 @@ abstract class MenuComponent {
         throw UnsupportedOperationException()
     }
 
+    open fun printVegetarian(){
+        throw UnsupportedOperationException()
+    }
+
     abstract fun createIterator(): Iterator
 }
