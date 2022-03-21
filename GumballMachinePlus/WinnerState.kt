@@ -1,5 +1,3 @@
-package gumballmachine2
-
 class WinnerState(val gumballMachine:GumballMachine):State{
     override fun insertQuarter(){
         println("Please wait for the gumball")

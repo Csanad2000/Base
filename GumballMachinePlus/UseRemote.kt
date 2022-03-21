@@ -1,5 +1,3 @@
-package gumballmachine2
-
 import java.rmi.*
 
 fun main(args:Array<String>){

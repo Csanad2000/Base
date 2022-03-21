@@ -1,5 +1,3 @@
-package gumballmachine2
-
 import java.rmi.*
 
 class GumballMonitor(val machine:GumballMachineRemote){

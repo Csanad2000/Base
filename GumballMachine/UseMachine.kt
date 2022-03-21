@@ -1,5 +1,3 @@
-package gumballmachine
-
 fun main() {
     val machine = GumballMachine(1)
     machine.insertQuarter()

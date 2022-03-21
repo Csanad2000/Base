@@ -1,5 +1,3 @@
-package gumballmachine2
-
 class HasQuarterState(val gumballMachine:GumballMachine):State{
     override fun insertQuarter(){
         println("You can't insert another quarter")

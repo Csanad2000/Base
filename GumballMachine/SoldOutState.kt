@@ -1,5 +1,3 @@
-package gumballmachine
-
 class SoldOutState(val gumballMachine: GumballMachine) : State {
     override fun insertQuarter() {
         println("You cannot insert a quarter")

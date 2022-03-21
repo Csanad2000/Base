@@ -1,5 +1,3 @@
-package gumballmachine2
-
 import kotlin.jvm.Throws
 import java.rmi.*
 import java.rmi.server.*

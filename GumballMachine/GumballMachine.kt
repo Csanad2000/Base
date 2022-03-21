@@ -1,5 +1,3 @@
-package gumballmachine
-
 class GumballMachine(var count: Int = 0) {
     val soldOutState: State = SoldOutState(this)
     val noQuarterState: State = NoQuarterState(this)

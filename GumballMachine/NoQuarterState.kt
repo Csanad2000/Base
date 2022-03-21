@@ -1,5 +1,3 @@
-package gumballmachine
-
 class NoQuarterState(val gumballMachine: GumballMachine) : State {
     override fun insertQuarter() {
         println("You inserted a quarter")

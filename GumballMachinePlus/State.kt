@@ -1,5 +1,3 @@
-package gumballmachine2
-
 interface State{
     abstract fun insertQuarter()
     abstract fun ejectQuarter()
